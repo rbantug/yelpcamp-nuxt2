@@ -3,6 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const mongoSanitize = require('express-mongo-sanitize')
 const xss = require('xss-clean')
+const cors = require('cors')
 
 const allRoutes = require('./allRoutes')
 const errorController = require('./controllers/errorController')
@@ -12,6 +13,8 @@ process.on("uncaughtException", (err) => {
 	console.log(err.name, err.message);
 	process.exit(1);
 });
+
+app.use(cors())
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json({ limit: '10kb' }))
