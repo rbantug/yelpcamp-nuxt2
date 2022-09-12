@@ -57,6 +57,10 @@ export default {
     { path: '/api', handler: '~/api' }
   ],
 
+  axios: {
+    baseURL: 'https://yelpcamp-nuxt2.herokuapp.com'
+  },
+
   auth: {
     redirect: {
       login: '/signin',
