@@ -55,7 +55,7 @@ export default {
     }
 
     .testimony {
-        height: 100vh;
+        height: 120vh;
         width: 40%;
     }
 }

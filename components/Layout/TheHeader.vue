@@ -23,7 +23,7 @@
                     </svg>
                 </div>
             </nuxt-link>
-            <nuxt-link to="#" class="nav-home">Home</nuxt-link>
+            <nuxt-link to="/campgrounds" class="nav-home">Home</nuxt-link>
         </div>
         <div class="right-nav">
             <div>
