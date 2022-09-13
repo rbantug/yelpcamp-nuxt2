@@ -10,7 +10,7 @@
           <BaseInputField @emit-data="modifyPassword" v-model="password" inputType="password" placeholder="Any password" :margin="false" bgColor="grey" />
           <div @click="submitForm">
             <BaseButton v-if="type === 'signin'"  size="long" class="btn">Login to account</BaseButton>
-            <BaseButton v-if="type === 'signup'" @click="submitForm" size="long" class="btn">Create an account</BaseButton>
+            <BaseButton v-if="type === 'signup'" size="long" class="btn">Create an account</BaseButton>
           </div>
         </div>
         <div v-if="type === 'signin'" class="sign-in-or-out">
@@ -80,7 +80,7 @@ export default {
         }  
         
         // sign-up
-        else if (this.$route.name === 'signup') {
+        /* else if (this.$route.name === 'signup') {
           this.$axios.post('api/v1/signup', {
             name: this.name,
             password: this.password,
@@ -107,7 +107,7 @@ export default {
               })
             }
           })
-        }  
+        } */  
       }
     }
 }

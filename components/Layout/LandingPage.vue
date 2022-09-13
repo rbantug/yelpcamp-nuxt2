@@ -235,7 +235,7 @@ export default {
     display: block;
     order: 2;
     object-fit: fill;
-    height: 100vh;
+    height: 120vh;
   }
 
   .logo-top-mobile {

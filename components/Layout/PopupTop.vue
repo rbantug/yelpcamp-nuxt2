@@ -1,7 +1,7 @@
 <template>
     <div v-if="isVisible" class="bg-black">
         <div class="container">
-            <p>This project was made by Ron Bantug and designed by <a href="https://www.codewell.cc/">Codewell</a></p>
+            <p>This project was made by R Bantug and designed by <a href="https://www.codewell.cc/">Codewell</a></p>
             <div class="closeBtn" @click="method">
                 <div></div>
             </div>
