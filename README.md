@@ -1,69 +1,86 @@
 # yelpcamp-nuxt2
 
-## Build Setup
+This is an attempt to replicate the Codewell.cc challenge found [here](https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b)
 
-```bash
-# install dependencies
-$ npm install
+The app is capable of simple signup and login using a username and a password. Front-end authentication is handled by Nuxt/Auth module while some of the API routes are protected and requires authentication for the routes to be accessed. User inputs are sanitized and validated before entering the database. 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+All data are dynamic and none are hardcoded. The camp reviews are virtually populated when we request for a single camp. This means that there are no redundant data in the database.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+And I intentionally disabled the user signup to prevent unnecessary traffic in the database. You can login using these credentials
 
-# generate static project
-$ npm run generate
-```
+- username: test user one
+- password: test1234
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Tech Used
 
-## Special Directories
+- Nuxt.js
+- CSS
+- Nuxt/auth module
+- Express.js inside Nuxt.js using serverMiddleware
+- MongoDB + Mongoose
+- Json web token
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+## Screenshots
 
-### `assets`
+### Landing Page
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+**Desktop**
+![Landing Page Desktop](https://drive.google.com/uc?id=1TZkpAN64PED22eumCBaV9ZOI6VCEi4W1)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+**Mobile**
 
-### `components`
+![Landing Page Mobile](https://drive.google.com/uc?id=13I5btxouWg53f9xTaqnCiihzZkRk8rOt)
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
+### Campgrounds
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
+**Desktop**
+![Campgrounds Page Desktop](https://drive.google.com/uc?id=1EEh64BOVKTCppnreD9F6Xiez4g82Ppei)
 
-### `layouts`
+**Mobile**
 
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
+![Campgrounds Page Mobile](https://drive.google.com/uc?id=1l3flR1BlBpKStucqt2POy99EMBz3fQBq)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+### Camp
 
+**Desktop**
+![Camp Page Desktop](https://drive.google.com/uc?id=1g4ZFrbREDziWPQ1wQffkNDS_BJ_NlvTV)
 
-### `pages`
+**Mobile**
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+![Camp Page Mobile](https://drive.google.com/uc?id=1gz-a4K2AD4iY50rLrZPm3VHQg3yIy4Uf)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+### Camp - Logged in
 
-### `plugins`
+**Desktop**
+![Camp Page Desktop](https://drive.google.com/uc?id=1FpghVtO8kWyuWb0fqslL6_F-CBBV1RA8)
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+**Mobile**
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+![Camp Page Mobile](https://drive.google.com/uc?id=116I3ZE2QV2CSbzymszDThRZqnE5h3aco)
 
-### `static`
+### Login
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
+**Desktop**
+![Login Page Desktop](https://drive.google.com/uc?id=1A_k6gyBOHeoRX8i5cA6ZWUzIknmFvqE9)
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+**Mobile**
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+![Login Page Mobile](https://drive.google.com/uc?id=1fnsy0k1onRR_3fnCaXZ9Gk1gvyEWqSSL)
 
-### `store`
+### Sign up
 
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+**Desktop**
+![Sign up Page Desktop](https://drive.google.com/uc?id=1-QOmd07UFtL9Qdkdpotwcsyymt9rD3IQ)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+**Mobile**
+
+![Sign up Page Mobile](https://drive.google.com/uc?id=1sSzTM_yFNrhWtsMoBSNW7Dkx7V9asEh3)
+
+### New Comment
+
+**Desktop**
+![New Comment Page Desktop](https://drive.google.com/uc?id=1x8H-gVaEZXnRPklP0BvGaGiITwQ8cBPV)
+
+**Mobile**
+
+![New Comment Page Mobile](https://drive.google.com/uc?id=1IoYDw7GiVgKuyLMR3K1KUjDuwB803uvA)
