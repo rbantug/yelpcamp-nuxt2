@@ -58,7 +58,7 @@ export default {
   ],
 
   axios: {
-    baseURL: 'https://yelpcamp-nuxt2.herokuapp.com'
+    baseURL: 'https://yelpcamp-nuxt2.onrender.com'
   },
 
   auth: {
