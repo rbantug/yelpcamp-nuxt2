@@ -42,7 +42,7 @@ export default {
 
 .btn-container:hover {
     cursor: pointer;
-    opacity: 90%
+    opacity: .9;
 }
 
 .long {
