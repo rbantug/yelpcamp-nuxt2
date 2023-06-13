@@ -1,5 +1,7 @@
 # yelpcamp-nuxt2
 
+Link to website: https://yelpcamp-nuxt2.onrender.com
+
 This is an attempt to replicate the Codewell.cc challenge found [here](https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b)
 
 The app is capable of simple signup and login using a username and a password. Front-end authentication is handled by Nuxt/Auth module while some of the API routes are protected and requires authentication for the routes to be accessed. User inputs are sanitized and validated before entering the database. 
