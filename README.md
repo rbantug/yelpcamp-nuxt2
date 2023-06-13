@@ -1,6 +1,7 @@
 # yelpcamp-nuxt2
 
 Link to website: https://yelpcamp-nuxt2.onrender.com
+STATUS: Offline
 
 This is an attempt to replicate the Codewell.cc challenge found [here](https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b)
 
