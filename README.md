@@ -1,6 +1,7 @@
 # yelpcamp-nuxt2
 
 Link to website: https://yelpcamp-nuxt2.onrender.com
+
 STATUS: Offline
 
 This is an attempt to replicate the Codewell.cc challenge found [here](https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b)
@@ -16,10 +17,10 @@ And I intentionally disabled the user signup to prevent unnecessary traffic in t
 
 ## Tech Used
 
-- Nuxt.js
+- Nuxt 2
 - CSS
 - Nuxt/auth module
-- Express.js inside Nuxt.js using serverMiddleware
+- Express.js inside Nuxt 2 using serverMiddleware
 - MongoDB + Mongoose
 - Json web token
 
